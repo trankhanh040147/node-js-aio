@@ -4,7 +4,7 @@ import chalk from 'chalk'
 import validator from 'validator'
 
 import substract from './utils.js';
-import notes from './notes.js';
+import msg from './notes.js';
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
 
@@ -28,7 +28,9 @@ argv.command({
         }
     },  
     handler: function (argv) {
-        notes.addNote(argv.title, argv.body)
+        // console.log('adding a new note');
+        console.log('Title: ' + argv.title);
+        console.log('Body: ', argv.body);
     }
 });
 
