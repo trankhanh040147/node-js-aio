@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \\\"Error: no test specified\\\" && exit 1\""
   },
   "author": "Matti Luukkainen",
@@ -14,6 +15,9 @@
     "express": "^4.18.2",
     "hello": "^0.6.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@flydotio/dockerfile": "^0.5.0",
+    "nodemon": "^1.17.1"
+  },
   "keywords": []
 }
